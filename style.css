@@ -1,8 +1,9 @@
 /* =============================================
-   USE AI IN BUSINESS
+   BIZ AI GROW
    Sales & Lead Generation
-   Fonts: Rubik + Space Mono (aibusiness.com style)
+   Fonts: Rubik + Space Mono
    Thick black borders + shaded backgrounds + dark text
+   Includes About page styles
    ============================================= */
 
 *,
@@ -900,6 +901,243 @@ footer {
     to { transform: translateY(0); opacity: 1; }
 }
 
+/* ============ ABOUT PAGE ============ */
+.page-header {
+    padding: 64px 0 48px;
+    text-align: center;
+    background: linear-gradient(180deg, #e8f0fe 0%, #fafafa 100%);
+}
+
+.page-header h1 {
+    font-family: var(--font);
+    font-size: clamp(28px, 5vw, 42px);
+    font-weight: 700;
+    letter-spacing: -1px;
+    margin-bottom: 12px;
+    color: var(--black);
+}
+
+.page-header p {
+    font-size: 16px;
+    color: var(--gray800);
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.about-story {
+    padding: 64px 0;
+    background: var(--white);
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    align-items: start;
+}
+
+.about-content h2 {
+    font-family: var(--font);
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    margin-bottom: 16px;
+    color: var(--black);
+}
+
+.about-content p {
+    font-size: 15px;
+    color: var(--gray800);
+    line-height: 1.7;
+    margin-bottom: 14px;
+}
+
+.about-values {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.value-card {
+    background: var(--gray50);
+    border: 2px solid var(--black);
+    border-radius: var(--radius-lg);
+    padding: 20px;
+    transition: all var(--transition);
+}
+
+.value-card:hover {
+    background: #e8f0fe;
+    transform: translateY(-2px);
+}
+
+.value-icon {
+    font-size: 22px;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.value-card h3 {
+    font-family: var(--font);
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 4px;
+    color: var(--black);
+}
+
+.value-card p {
+    font-size: 13px;
+    color: var(--gray600);
+    line-height: 1.5;
+}
+
+.about-audience {
+    padding: 64px 0;
+    background: #f5f5f5;
+}
+
+.audience-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2px;
+    background: var(--black);
+    border: 2px solid var(--black);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+}
+
+.audience-card {
+    background: var(--white);
+    padding: 24px 18px;
+    transition: all var(--transition);
+}
+
+.audience-card:hover {
+    background: #f0f4ff;
+}
+
+.audience-icon {
+    font-size: 24px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.audience-card h3 {
+    font-family: var(--font);
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: var(--black);
+}
+
+.audience-card p {
+    font-size: 12px;
+    color: var(--gray600);
+    line-height: 1.5;
+}
+
+.about-status {
+    padding: 64px 0;
+    background: var(--white);
+}
+
+.status-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2px;
+    background: var(--black);
+    border: 2px solid var(--black);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+}
+
+.status-card {
+    background: var(--white);
+    padding: 24px 18px;
+    transition: all var(--transition);
+}
+
+.status-card:hover {
+    background: #f5f3ff;
+}
+
+.status-icon {
+    font-size: 22px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.status-card h3 {
+    font-family: var(--font);
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: var(--black);
+}
+
+.status-card p {
+    font-size: 12px;
+    color: var(--gray600);
+    line-height: 1.5;
+}
+
+.about-future {
+    padding: 64px 0;
+    background: #f5f5f5;
+}
+
+.future-content > p {
+    font-size: 15px;
+    color: var(--gray800);
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.future-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.future-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    background: var(--white);
+    border: 2px solid var(--black);
+    border-radius: var(--radius-lg);
+    padding: 20px;
+    transition: all var(--transition);
+}
+
+.future-item:hover {
+    background: #f0f4ff;
+    transform: translateY(-2px);
+}
+
+.future-check {
+    font-size: 20px;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.future-item strong {
+    display: block;
+    font-family: var(--font);
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--black);
+    margin-bottom: 4px;
+}
+
+.future-item p {
+    font-size: 13px;
+    color: var(--gray600);
+    line-height: 1.5;
+}
+
 /* =============================================
    TABLET (max 900px)
    ============================================= */
@@ -953,6 +1191,16 @@ footer {
 
     .section-header {
         margin-bottom: 28px;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .audience-grid,
+    .status-grid {
+        grid-template-columns: 1fr 1fr;
     }
 }
 
@@ -1229,6 +1477,38 @@ footer {
         right: 10px;
         bottom: 10px;
         font-size: 12px;
+    }
+
+    .page-header {
+        padding: 40px 0 32px;
+    }
+
+    .page-header h1 {
+        font-size: 24px;
+    }
+
+    .about-story {
+        padding: 36px 0;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .about-content h2 {
+        font-size: 22px;
+    }
+
+    .about-audience,
+    .about-status,
+    .about-future {
+        padding: 36px 0;
+    }
+
+    .audience-grid,
+    .status-grid {
+        grid-template-columns: 1fr;
     }
 }
 
